@@ -1,0 +1,10 @@
+{
+  "Visit Site" : "home",
+  "Dashboard" : "admindashboard",
+  "Books" : {
+      "View Books" : "adminbooks/index",
+      "Add Book" : "adminbooks/edit/new"
+  },
+  "Categories" : "admincategories",
+  "Reviews" : "adminreviews"
+}

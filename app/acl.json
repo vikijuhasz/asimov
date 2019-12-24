@@ -1,0 +1,26 @@
+{
+  "Guest" : {
+    "denied" : {
+       "Contact" : ["sendemail"] 
+    },
+    "Home" : ["*"],
+    "Register" : ["login", "register"],
+    "Bookstore" : ["*"],
+    "Contact" : ["*"],
+    "Restricted" : ["*"]
+  },
+  "LoggedIn" : {
+    "denied" : {
+      "Register" : ["login", "register"]
+    },
+    "Register" : ["logout"],
+    "User" : ["*"]
+  },
+  "Admin" : {
+    "denied" : {},
+    "Admindashboard" : ["*"],
+    "Adminbooks" : ["*"], 
+    "Admincategories" : ["*"], 
+    "Adminreviews" : ["*"]
+  }
+}

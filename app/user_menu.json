@@ -1,0 +1,8 @@
+{
+  "Login" : "register/login",
+  "Register" : "register/register",
+  "%USERNAME%" : {
+    "My Account" : "user/index",
+    "Logout" : "register/logout"
+  }
+}
