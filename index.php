@@ -5,9 +5,6 @@
   use App\Models\Users;
   define('DS', DIRECTORY_SEPARATOR);
   define('ROOT', dirname(__FILE__));
-  
-  // load configuration
-  require_once(ROOT . DS . 'config' . DS . 'config.php');
 
   function autoload($className){
     $classAry = explode('\\',$className);
@@ -23,8 +20,14 @@
   require_once ROOT . DS . 'vendor' . DS . 'autoload.php';
   session_start();
 
-  $url = isset($_SERVER['PATH_INFO']) ? explode('/', ltrim($_SERVER['PATH_INFO'], '/')) : [];
+  $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+  $dotenv->load();
 
+  // load configuration
+  require_once(ROOT . DS . 'config' . DS . 'config.php');
+
+  $url = isset($_SERVER['PATH_INFO']) ? explode('/', ltrim($_SERVER['PATH_INFO'], '/')) : [];
+  
   if(!Session::exists(CURRENT_USER_SESSION_NAME) && Cookie::exists(REMEMBER_ME_COOKIE_NAME)) {
     Users::loginUserFromCookie();
   }
