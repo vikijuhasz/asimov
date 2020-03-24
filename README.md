@@ -6,7 +6,8 @@ This is an incomplete eCommerce bookstore built with RUAH MVC PHP framework. The
 
 ## Prerequisites/Development Setup
 
-- To view the site on your local machine install one of the AMP solution stacks (XAMPP, LAMP, MAMP etc.) depending on your OS or install required software (Apache, MySQL/MariaDB and PHP). 
+- To view the site on your local machine install one of the AMP solution stacks (XAMPP 7.3.5 or LAMP, MAMP etc.) depending on your OS or install required software (Apache 2.4.39, MariaDB 10.1.40/MySQL and PHP 7.3.5). 
+- Copy the project to the default Apache root directory (htdocs or www)
 - Create database named 'asimov' and import asimov.sql file
 
 ## Configuration
@@ -18,7 +19,6 @@ This is an incomplete eCommerce bookstore built with RUAH MVC PHP framework. The
 - cart 
 - payment gateway 
 - forgotten password 
-- and more..    	
 
 ## Notes
 
